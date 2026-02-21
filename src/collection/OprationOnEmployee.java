@@ -14,13 +14,13 @@ public class OprationOnEmployee {
         employeeList.add(new Employee("nandini", 40000, "female"));
         employeeList.add(new Employee("akay", 50000, "male"));
 
-//        System.out.println(employeeList);
-//
-//        List<String> employees = employeeList.stream().map(Employee::getName).collect(Collectors.toList());
-//        System.out.println(employees);
+        System.out.println(employeeList);
 
-//        var stringList = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender));
-//        System.out.println(stringList);
+        List<String> employees = employeeList.stream().map(Employee::getName).collect(Collectors.toList());
+        System.out.println(employees);
+
+        var stringList = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender));
+        System.out.println(stringList);
 
 
         List<Employee> employeeList1 = employeeList.stream().filter(employee -> employee.getSalary() > 40000).collect(Collectors.toList());

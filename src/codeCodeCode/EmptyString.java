@@ -9,7 +9,7 @@ public class EmptyString {
         List<String> strings = Arrays.asList("abc", "", "def", "", "ghi");
 
         System.out.println(strings.stream()
-                .filter(emptys -> !emptys.isEmpty())
+                .filter(empty -> !empty.isEmpty())
                 .collect(Collectors.toList()));
 
     }

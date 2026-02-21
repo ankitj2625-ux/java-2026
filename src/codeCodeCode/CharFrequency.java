@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class CharFrequency {
     public static void main(String[] args) {
-        String str = "ankit";
+        String str = "ankitJIbhakate";
 
         Map<Character, Long> integerMap = str.chars()
                 .mapToObj(c -> (char) c)
